@@ -1,0 +1,53 @@
+article{
+    border: 2px solid royalblue;
+    border-radius: 8px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.akcja input {
+    width: 200px;
+    height: 100px;
+    color: royalblue;
+
+}
+h1{
+    font-size: 30px;
+    font-variant: small-caps;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: royalblue;
+    font-weight: bold;
+}
+div{
+    margin-left: 41px;
+}
+form input{
+    margin-top: 30px;
+    width: 196px;
+    height: 50px;
+    color: royalblue;
+}
+form{
+    margin-left: 41px;
+    margin-bottom: 50px;
+}
+footer{
+    font-variant: small-caps;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    background-color: rgba(65, 105, 225, 0.212);
+    width: 100%;
+    color: royalblue;
+    border-top: solid 2px royalblue;
+}
+footer h5{
+    margin-top: -12px;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <title> JavaScript</title>
+    <link href="kaskada.css" rel="stylesheet" type="text/css" />
+</HEAD>
+<script language="JavaScript" type="text/javascript">
+    //deklaracja funkcji
+    function showDialogBoxOne(a,b){
+        var userName = prompt("Podaj swoje imię: ");
+        if((userName!=null) && (userName!="")){
+            alert("Podana wartość to: " + userName);
+        }
+        if(typeof userName === "string"){
+            alert("Zmienna typu string!");
+        }
+    }
+
+
+</script>
+<script language="JavaScript" type="text/javascript">
+    //deklaracja funkcji
+    function showDialogBoxTwo(a,b){
+        var userNumber = prompt("Podaj liczbe ");
+        //konwersja typu - string to intiger
+        userNumber = parseFloat(userNumber);
+        if((userNumber!=null) && (userNumber!="")){
+            alert("Podana wartość to: " + userNumber);
+        }
+        if(typeof userNumber === "string"){
+            alert("Zmienna typu string!");
+        }
+        if((userNumber!=null) && (userNumber!="")){
+            alert("Zmienna typu " + typeof userNumber + "!");
+        }
+    }
+
+
+</script>
+<script language="JavaScript" type="text/javascript">
+    function checkData(){
+        var dane = document.getElementById('txtVal').value;
+        var dl = dane.length;
+
+        if(dl!=0){
+        alert("Ciąg znaków: " + dane + " ma długość: " + dl + " znaków");
+
+        for(let i=0; i<dl; i++){
+        alert("Znak: " + dane.charAt(i) + " ma kod ASCII: " + dane.charCodeAt(i));
+
+        if(((dane.charCodeAt(i)>=65) && (dane.charCodeAt(i)<=90)) || ((dane.charCodeAt(i)>=97) && (dane.charCodeAt(i)<=122))){
+        alert("Znak poprawny!");
+        }   
+            else
+                {
+                    alert("Podany znak: " + dane.charAt(i) + " nie jest literą!");
+                }
+        }
+        }
+        }
+</script>
+
+<BODY>
+    <article>
+    <h1>Wybierz przycisk!</h1>
+    <div class="akcja">
+    <input type="button" onclick="showDialogBoxOne()" value="Akcja na imionach"></input>
+    <input type="button" onclick="showDialogBoxTwo()" value="Akcja na liczbach"></input>
+    </div>
+    <form method="" action="">
+        <input type="text" id="txtVal" size="20">
+        <input type="button" id="guzik" onclick="checkData()" value="Wypisz dane"></input>
+    </form>
+    </article>
+    <footer>
+        <h3>Wojtek Połeć 4CT</h3>
+        <h5>ZST RZESZÓW</h5>
+    </footer>
+</BODY>
+
+</HTML>
